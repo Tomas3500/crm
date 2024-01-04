@@ -93,38 +93,6 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/mixins/indexClint.js":
-/*!******************************************************!*\
-  !*** ./resources/js/components/mixins/indexClint.js ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  data: function data() {
-    return {
-      clints: []
-    };
-  },
-  mounted: function mounted() {
-    this.getClint();
-  },
-  methods: {
-    getClint: function getClint() {
-      var _this = this;
-
-      axios.get("/api/clint/index").then(function (response) {
-        _this.clints = response.data.data;
-      });
-    }
-  }
-});
-
-/***/ }),
-
 /***/ "./resources/js/components/Status/ShowComponent.vue":
 /*!**********************************************************!*\
   !*** ./resources/js/components/Status/ShowComponent.vue ***!

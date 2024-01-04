@@ -11,24 +11,28 @@ export default new VueRouter({
         },
 
         {
-            path: '/user/login', component: () => import('./layout/LoginComponent'),
+            path: '/user/login',
+            component: () => import('./layout/LoginComponent'),
             name: 'user.login',
         },
 
         {
-            path: '/cabinet', component: () => import('./HomeCrmComponent'),
-            name: 'user.cabinet',
+            path: '/cabinet',
+            component: () => import('./views/MainComponent'),
+            name: 'cabinet',
 
         },
 
         {
-            path: '/clint', component: () => import('./views/Clints'),
+            path: '/clint',
+            component: () => import('./views/Clints'),
             name: 'clint'
 
         },
 
         {
-            path: '/cars', component: () => import('./views/Cars'),
+            path: '/cars',
+            component: () => import('./views/Cars'),
             name: 'cars'
 
         },

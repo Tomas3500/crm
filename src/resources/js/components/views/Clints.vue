@@ -1,5 +1,6 @@
 <template>
   <div class="container justify-content-center">
+
     <div class="mb-3">
       <input-component-vue
         placeholder="имя"

@@ -1,27 +1,32 @@
 <template>
-  <div class="container pt-3">
-    <div class="row">
-      <div class="col">
-        <HomeCrmComponent />
-      </div>
+    <div class="container pt-3">
+        <div class="row">
+            <main class="col-lg-9">
+                <router-view/>
+            </main>
+        </div>
     </div>
-  </div>
 </template>
 
 <script>
-import HomeCrmComponent from "./HomeCrmComponent.vue";
+import MainComponent from "./views/MainComponent";
+import LoginComponent from "./layout/LoginComponent";
 export default {
-  name: "App",
+    name: "App",
+    components: {
+        LoginComponent
+    },
 
-  components: {
-    HomeCrmComponent,
-  },
-
-
-  updated() {
-    this.token = localStorage.getItem("api_token");
-    console.log(this.token)
-  },
+    data() {
+        console.log('hello')
+        return {
+            token: "",
+        };
+    },
+    updated() {
+        this.token = localStorage.getItem("api_token");
+        console.log(this.token)
+    },
 };
 console.log('hello');
 </script>

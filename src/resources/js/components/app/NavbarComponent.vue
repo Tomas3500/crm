@@ -13,7 +13,7 @@
         </router-link>
       </ul>
       <!-- ?? -->
-      <a v-if="token" href="#" class="nav-link" v-on:click.prevent="logout"
+      <a  href="#" class="nav-link" v-on:click.prevent="logout"
         >Выход</a
       >
     </div>

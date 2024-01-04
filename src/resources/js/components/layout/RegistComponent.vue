@@ -61,7 +61,6 @@
         <button type="submit" value="register" class="btn btn-primary">
           Регистрация
         </button>
-
         <!-- !! метод! -->
         <router-link :to="{ name: 'user.login' }" class="btn-secondary btn"
           >Войти в систему
@@ -75,7 +74,6 @@
 import { email, required, minLength } from "vuelidate/lib/validators";
 export default {
   name: "RegistComponent",
-
   data() {
     return {
       inputValue: "",
@@ -101,8 +99,6 @@ export default {
       minLength: minLength(8),
     },
   },
-
-  mounted() {},
 
   methods: {
     regist() {
